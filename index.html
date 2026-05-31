@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vanshika Prajesh | Full-Stack Web Developer</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <!--CSS Link-->
+  <link rel="stylesheet" href="/My Portfolio/index.css">
+  <link rel="stylesheet" href="/My Portfolio/server.js">
+
+  <style>
+    .typed-text{
+      color:#00ffcc;
+      font-size:40px;
+      font-weight:bold;
+      border-right:4px solid #00ffcc;
+      white-space:nowrap;
+      overflow:hidden;
+      width:0;
+      animation:
+        typing 4s steps(20,end) forwards,
+        blink 0.8s infinite;
+    }
+
+    @keyframes typing{
+      from{
+        width:0;
+      }
+      to{
+        width:420px;
+      }
+    }
+
+    @keyframes blink{
+      50%{
+        border-color:transparent;
+      }
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Portfolio</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div class="container">
+      <div class="row align-items-center">
+
+        <div class="col-lg-6">
+          <h2>Hi, I'm </h2>
+          <h1><span style="color: cornflowerblue;">Vanshika Prajesh</span>
+          </h1>
+
+          <div class="tagline"><span>I'm a
+            </span><span class="index-module_type__E-SaG typed-text">Full-Stack Web
+              Developer</span></div>
+
+          <p>
+            Full-Stack Web Developer specializing in creating modern,
+            responsive, and high-performance websites using HTML5,
+            CSS3, JavaScript, Bootstrap and Node.js.
+          </p>
+
+          <div class="d-flex gap-3 flex-wrap">
+            <a href="#projects" class="btn btn-custom">
+              View Projects
+            </a>
+
+            <a href="#contact" class="btn btn-outline-light px-4 py-3 rounded-pill">
+              Contact Me
+            </a>
+          </div>
+
+          <div class="social-icons mt-4">
+            <a href="#"><i class="bi bi-github"></i></a>
+            <a href="www.linkedin.com/in/vanshika-prajapati-504209382"><i class="bi bi-linkedin"></i></a>
+            <a href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
+          </div>
+        </div>
+
+        <div class=" col-lg-6 text-center mt-5 mt-lg-0 hero-image aos-init aos-animate" data-aos="fade-left"
+          data-aos-delay="200">
+          <div class="image-wrapper"><img src="/My Portfolio/images/Vanshika.JPG" alt="Vanshika Prajesh Photo">
+            <div class="image-bg"></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <div class="container">
+      <div class="section-title">
+        <h2>About Me</h2>
+        <p>Get to know more about me and my development journey.</p>
+      </div>
+
+      <div class="about-card">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <h3 class="mb-4">Creative Full-Stack Developer</h3>
+
+            <p>
+              I am a passionate Full-Stack Web Developer who loves building
+              responsive and user-friendly websites. I specialize in modern
+              frontend technologies and backend development with Node.js.
+            </p>
+
+            <p>
+              My goal is to create beautiful digital experiences that are fast,
+              secure, and scalable.
+            </p>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="row g-4">
+
+              <div class="col-6">
+                <div class="skill-box">
+                  <i class="bi bi-code-slash"></i>
+                  <h5>Clean Code</h5>
+                </div>
+              </div>
+
+              <div class="col-6">
+                <div class="skill-box">
+                  <i class="bi bi-phone"></i>
+                  <h5>Responsive</h5>
+                </div>
+              </div>
+
+              <div class="col-6">
+                <div class="skill-box">
+                  <i class="bi bi-lightning"></i>
+                  <h5>Fast Performance</h5>
+                </div>
+              </div>
+
+              <div class="col-6">
+                <div class="skill-box">
+                  <i class="bi bi-palette"></i>
+                  <h5>Modern UI</h5>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-title">
+        <h2>My Skills</h2>
+        <p>Technologies I work with</p>
+      </div>
+
+      <div class="row g-4">
+
+        <div class="col-md-3">
+          <div class="skill-box">
+            <i class="bi bi-filetype-html"></i>
+            <h4>HTML5</h4>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="skill-box">
+            <i class="bi bi-filetype-css"></i>
+            <h4>CSS3</h4>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="skill-box">
+            <i class="bi bi-filetype-js"></i>
+            <h4>JavaScript</h4>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="skill-box">
+            <i class="bi bi-window"></i>
+            <h4>jQuery</h4>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="skill-box">
+            <i class="bi bi-bootstrap"></i>
+            <h4>Bootstrap</h4>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="skill-box">
+            <i class="bi bi-server"></i>
+            <h4>Node.js</h4>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="skill-box">
+            <i class="bi bi-database"></i>
+            <h4>DBMS(SQL Query)</h4>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="skill-box">
+            <i class="bi bi-git"></i>
+            <h4>Git & GitHub</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-title">
+        <h2> My Projects</h2>
+        <p>Some of my recent work</p>
+      </div>
+
+      <div class="row g-4">
+
+        <div class="col-lg-4">
+          <div class="project-card">
+            <a href="http://127.0.0.1:5501/web/index.html"><img src="/My Portfolio/images/restaurant.png"
+                alt="Restaurant Website" /></a>
+
+            <div class="project-content">
+              <h4>Restaurant Website </h4>
+              <p>
+                This project is an restaurant website that allows users to explore the menu, view restaurant details,
+                and easily place orders or make reservations.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="project-card">
+            <a href="http://127.0.0.1:5501/index.html"> <img src="/My Portfolio/images/PG Life.jpeg"
+                alt="PG Life Website" /></a>
+
+            <div class="project-content">
+              <h4>PG Life Website </h4>
+              <p>
+                PG Life is a web platform that helps students and professionals easily find Paying Guest (PG)
+                accommodations. It provides details like rent, amenities, photos, and location, and making the search
+                process simple, transparent.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="project-card">
+            <a href="http://127.0.0.1:5500/My%20Portfolio/index.html"><img src="/My Portfolio/images/My Porfolio.jpeg"
+                alt="My Portfolio Website" /></a>
+
+            <div class="project-content">
+              <h4>My Portfolio Website</h4>
+              <p>
+                Creative personal portfolio website with smooth animations
+                and responsive layout.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-title">
+        <h2>Contact Me</h2>
+        <p>Let's work together</p>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="contact-box">
+
+            <form id="contactForm" action="/submit" method="POST">
+
+              <div class="row">
+                <div class="col-md-6 mb-4">
+                  <input type="text" id="Name" class="form-control" placeholder="Your Name" required />
+                </div>
+
+                <div class="col-md-6 mb-4">
+                  <input type="email" id="Email" class="form-control" placeholder="Your Email" required />
+                </div>
+              </div>
+
+              <div class="mb-4">
+                <input type="text" id="Subject" class="form-control" placeholder="Subject" required />
+              </div>
+
+              <div class="mb-4">
+                <textarea class="form-control" id="Message" rows="6" placeholder="Your Message" required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-custom">
+                Send Message
+              </button>
+
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>
+      © 2026 Vanshika Prajesh | Full-Stack Web Developer
+    </p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    // Contact Form Alert
+    document
+      .getElementById("contactForm")
+      .addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        alert("Thank you! Your message has been sent.");
+
+        this.reset();
+      });
+
+    // Navbar background on scroll
+    window.addEventListener("scroll", function () {
+      const navbar = document.querySelector(".navbar");
+
+      if (window.scrollY > 50) {
+        navbar.style.background = "#020617";
+      } else {
+        navbar.style.background = "rgba(15, 23, 42, 0.9)";
+      }
+    });
+  </script>
+
+</body>
+
+</html>
