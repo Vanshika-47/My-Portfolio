@@ -12,10 +12,10 @@
    overflow-x: hidden;
  }
 
-.container {
+/*.container {
     width: 100%;
     max-width: 1200px;
-}
+}*/
 
  :root {
    --primary: #af3e25;
