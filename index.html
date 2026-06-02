@@ -21,24 +21,25 @@
 
   <style>
     .typed-text{
-      color:#00ffcc;
-      font-size:40px;
-      font-weight:bold;
-      border-right:4px solid #00ffcc;
-      white-space:nowrap;
-      overflow:hidden;
-      width:0;
-      animation:
-        typing 4s steps(20,end) forwards,
-        blink 0.8s infinite;
-    }
+    display:inline-block;
+    color:#00ffcc;
+    font-size:40px;
+    font-weight:bold;
+    overflow:hidden;
+    white-space:nowrap;
+    border-right:3px solid #00ffcc;
+
+    animation:
+        typing 3s steps(24,end) infinite alternate,
+        blink .8s step-end infinite;
+}
 
     @keyframes typing{
       from{
         width:0;
       }
       to{
-        width:420px;
+        width:100px;
       }
     }
 
